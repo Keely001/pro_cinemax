@@ -18,7 +18,7 @@ export const MovieDetail = () => {
       console.log(json);
     }
     fetchMovie();
-  }, [])
+  }, [params.id])
 
   useTitle(movie.title)
     return (
@@ -50,7 +50,7 @@ export const MovieDetail = () => {
                 </svg>
                 <p className="ml-2 font-bold text-gray-900 dark:text-white">{movie.vote_average}</p>
                 <span className="w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400"></span>
-                <a href="#" className="text-gray-900 dark:text-white">{movie.vote_count} reviews</a>
+                <a href="/" className="text-gray-900 dark:text-white">{movie.vote_count} reviews</a>
             </div>
             <p className="my-4">
               <span className="mr-2 font-bold">Runtime:</span>
